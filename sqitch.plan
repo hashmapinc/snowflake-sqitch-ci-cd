@@ -1,0 +1,5 @@
+%syntax-version=1.0.0
+%project=flipr
+%uri=https://github.com/sqitchers/sqitch-snowflake-intro/
+
+appschema 2018-07-27T14:27:24Z Marge N. O’Vera <marge@example.com> # Add schema for all flipr objects.
