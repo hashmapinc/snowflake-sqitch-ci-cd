@@ -3,3 +3,4 @@
 %uri=https://github.com/sqitchers/sqitch-snowflake-intro/
 
 appschema 2018-07-27T14:27:24Z Marge N. O’Vera <marge@example.com> # Add schema for all flipr objects.
+users [appschema] 2018-07-27T15:03:56Z Marge N. O’Vera <marge@example.com> # Creates table to track our users.
