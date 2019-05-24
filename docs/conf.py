@@ -17,12 +17,12 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'CI/CD for Snowflake'
-copyright = '2019, Prem Dubey'
-author = 'Prem Dubey'
+project = 'Snowflake-CI/CD'
+copyright = '2019, Hashmap, Inc'
+author = 'Hashmap, Inc'
 
 # The full version, including alpha/beta/rc tags
-release = '0.1'
+release = '1.0'
 
 
 # -- General configuration ---------------------------------------------------
