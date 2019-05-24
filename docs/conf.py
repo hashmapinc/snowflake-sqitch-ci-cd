@@ -17,12 +17,15 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'CI/CD for Snowflake'
-copyright = '2019, Prem Dubey'
-author = 'Prem Dubey'
+project = 'Snowflake-CI/CD'
+copyright = '2019, Hashmap, Inc'
+author = 'Hashmap, Inc'
 
 # The full version, including alpha/beta/rc tags
-release = '0.1'
+release = '1.0'
+
+# Setting master doc to index as contents does not exist
+master_doc = 'index'
 
 
 # -- General configuration ---------------------------------------------------
@@ -44,12 +47,18 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 # -- Options for HTML output -------------------------------------------------
 
+
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+html_theme = 'sphinx_rtd_theme'
+
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+# apply css widening of the too-narrow read-the-docs content section
+def setup(app):
+    app.add_stylesheet('wider-content.css')
