@@ -18,15 +18,20 @@ Repository to demonstrate CI/CD on snowflake using [sqitch](https://sqitch.org/)
 ## Requirements
 
 * Jenkins Setup
-  - We need to have a Jenkins Server, which can schedule executors via docker
+  - We need to have a Jenkins Server, which can schedule executors via docker.
+  
 * Docker image for sqitch-snowflake
   - The executor used in this demonstration is a docker container which contains sqitch, snowflake odbc driver, and the snowsql client.
-    Visit [docker-sqitch](https://github.com/sqitchers/docker-sqitch) on instructions on how to build the docker image. There might be some customizations required depending upon your Jenkins Setup
-    [See Caveats.md](/Caveats.md)
-    [Docker Image](https://cloud.docker.com/u/hashmapinc/repository/docker/hashmapinc/sqitch) with tag `snowflake-dev` can be used for similar use case
+    Visit [docker-sqitch](https://github.com/sqitchers/docker-sqitch) on instructions on how to build the docker image. There might be some customizations required depending upon your Jenkins Setup.
+    See [Caveats.md](/Caveats.md).
+    
+    
+    [Docker Image](https://cloud.docker.com/u/hashmapinc/repository/docker/hashmapinc/sqitch) with tag `snowflake-dev` can be used for similar use case.
     [Docker Image](https://cloud.docker.com/u/hashmapinc/repository/docker/hashmapinc/sqitch) with tag `snowflake` is the as it is image after building from [docker-sqitch](https://github.com/sqitchers/docker-sqitch) for snowflake with default Dockerfile
+    
 * Git Client
   - We will also need the git client for communicating with github
+  
 * Snowflake account
   - If you do not have a snowflake account, You can sign up for one by visiting [Snowflake Free Trial](https://trial.snowflake.com/?_ga=2.198251247.151166467.1558600181-331987107.1558493529)
     This will get you 30 days of free trial worth $400
@@ -53,4 +58,4 @@ You can also drop an email to `prem.dubey@hashmapinc.com`
 
 ## Documentation
 
-See [The Documentation Here](/docs/) for the latest updates and a detailed How-To-Guide.
+See [Documentation](https://snowflake-sqitch-ci-cd.readthedocs.io/en/latest/) for the latest updates and a detailed How-To-Guide.
